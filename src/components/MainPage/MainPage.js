@@ -16,7 +16,7 @@ function MainPage() {
             trigger: ".mainPage",
             start: "top",
             end: "bottom ",
-            scrub: 9,
+            scrub: 4,
             },
         });
 

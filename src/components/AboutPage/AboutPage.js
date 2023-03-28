@@ -9,8 +9,9 @@ function AboutPage() {
     useEffect(() => {
         gsap.to(".aboutPage_info_Title", {
         y: "1em",
-        color: "var(--txt-primary)",
         transformOrigin: "bottom",
+        textShadow: "0px -40px 64px rgba(0,0,0,0.3)",
+        transform: "transform: scaleX(1) scaleY(1) scaleZ(0.6) rotateX(32deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg)",
         duration: 3,
         opacity: 1,
         scrollTrigger: {
@@ -22,7 +23,6 @@ function AboutPage() {
         });
         gsap.to(".aboutPage_info_Description", {
             y: "4em",
-            color: "var(--txt-primary)",
             transformOrigin: "bottom",
             duration: 3,
             opacity: 1,
@@ -36,7 +36,6 @@ function AboutPage() {
         gsap.to(".aboutPage_static", {
             y: "4em",
             marginBottom: "8em",
-            color: "var(--txt-primary)",
             transformOrigin: "bottom",
             duration: 3,
             opacity: 1,
@@ -50,7 +49,6 @@ function AboutPage() {
         gsap.to(".card1", {
             y: "0em",
             marginBottom: "8em",
-            color: "var(--txt-primary)",
             transformOrigin: "bottom",
             duration: 3,
             opacity: 1,
@@ -64,13 +62,12 @@ function AboutPage() {
         gsap.to(".card2", {
             y: "2em",
             marginBottom: "8em",
-            color: "var(--txt-primary)",
             transformOrigin: "bottom",
             duration: 3,
             opacity: 1,
             scrollTrigger: {
                 trigger: ".aboutPage_static",
-                start: "center +600",
+                start: "center +800",
                 end: "bottom center",
                 scrub: 2,
                 },
@@ -78,13 +75,12 @@ function AboutPage() {
         gsap.to(".card3", {
             y: "4em",
             marginBottom: "8em",
-            color: "var(--txt-primary)",
             transformOrigin: "bottom",
             duration: 3,
             opacity: 1,
             scrollTrigger: {
                 trigger: ".aboutPage_static",
-                start: "center +600",
+                start: "center +1000",
                 end: "bottom center",
                 scrub: 3,
                 },

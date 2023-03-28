@@ -2,6 +2,7 @@ import React, { useRef } from 'react'; // Добавляем {useRef}
 import CountUp, { useCountUp } from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 
+
 function CardStatisticsPage(props) {
   const counterRef = useRef(); // Создаем реф для счетчика
 
