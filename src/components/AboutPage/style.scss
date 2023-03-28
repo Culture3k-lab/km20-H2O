@@ -1,0 +1,110 @@
+.aboutPage {
+    height: 100vh;
+    padding: 1em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .aboutPage_info {
+        margin-top: 2em;
+        .aboutPage_info_Title {
+            color: var(--txt-primary);
+            max-width: 800px;
+            margin-bottom: .5em;
+        }
+        .aboutPage_info_Description {
+            color: var(--txt-primary);
+            max-width: 600px;
+        }
+    }
+
+    .aboutPage_static {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        margin-bottom: 2em;
+
+        .aboutPage_static_Card {
+            .aboutPage_statistics_Title {
+                font-size: 1em;
+                color: var(--txt-primary);
+                display: flex;
+                flex-direction: column;
+
+                margin-bottom: 2em;
+
+                .aboutPage_statistics_Title_Alt {
+                    font-weight: 400;
+                    font-size: .9em;
+                    color: var(--txt-secondary);
+                }
+            }
+            .aboutPage_statistics_Description {
+                    font-weight: 400;
+                    font-size: .9em;
+                    color: var(--txt-secondary);
+                    opacity: .5;
+
+                    margin-bottom: 1em;
+            }
+            .aboutPage_statistics_Count {
+                font-size: 8em;
+                font-weight: 500;
+            }
+        }
+        .card1 { grid-area: 1 / 1 / 2 / 3; }
+        .card2 { grid-area: 1 / 3 / 2 / 4; }
+        .card3 { grid-area: 1 / 4 / 2 / 5; }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .aboutPage {
+        height: auto;
+        
+        .aboutPage_info {
+            margin-bottom: 4em;
+        }
+        .aboutPage_static {
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+    
+            .aboutPage_static_Card {
+                .aboutPage_statistics_Title {
+                    font-size: 1em;
+                    color: var(--txt-primary);
+                    display: flex;
+                    flex-direction: column;
+    
+                    margin-bottom: 1em;
+    
+                    .aboutPage_statistics_Title_Alt {
+                        font-weight: 400;
+                        font-size: .9em;
+                        color: var(--txt-primary);
+                    }
+                }
+                .aboutPage_statistics_Description {
+                        font-weight: 400;
+                        font-size: .9em;
+                        color: var(--txt-secondary);
+    
+                        margin-bottom: 1em;
+                }
+                .aboutPage_statistics_Count {
+                    font-size: 8em;
+                    font-weight: 500;
+                }
+            }
+            .card1 { grid-area: 1 / 1 / 2 / 2; }
+            .card2 { grid-area: 2 / 1 / 3 / 2; }
+            .card3 { grid-area: 3 / 1 / 4 / 2; }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+// Components
+@import "../components/Button/style.scss";
+@import "../components/NavigationBar/style.scss";
+
+@import "../components/Card/CardStatisticsPage/style.scss";
+
+// Block
+@import "../components/MainPage/style.scss";
+@import "../components/AboutPage/style.scss";
+@import "../components/StatisticsPage/style.scss";
+@import "../components/ShowPage/style.scss";
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --red: #ff0000;
+  --light-gray: #F3F3F3;
+  --dark-gray: #999;
+
+  --txt-primary: var(--black);
+  --txt-secondary: #484848;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+
+  h1, h2, h3, h4, h5, h6, p, a {
+    line-height: 130%;
+
+    margin: 0;
+    padding: 0;
+  }
+  h1 {}
+  h2 {
+    font-size: 3em;
+  }
+}

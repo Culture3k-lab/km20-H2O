@@ -1,0 +1,61 @@
+.cardStatisticsPage {
+    width: 100%;
+    height: 100vh;
+    padding: 2em 1em;
+
+    border-left: 1px solid #BABABA;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .cardStatisticsPage_Information_top {
+        display: flex;
+        flex-direction: column;
+
+        .cardStatisticsPage_Information_top_Caption {
+            font-size: .9em;
+            margin-bottom: 1em;
+            color: var(--txt-secondary);
+        }
+        .cardStatisticsPage_Information_top_Description {
+            font-size: 4em;
+            font-weight: 500;
+            color: var(--txt-primary);
+        }
+    }
+    .cardStatisticsPage_Information_center {
+        .cardStatisticsPage_Information_center_Static {
+            font-size: 1em;
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            gap: .5em;
+
+            .cardStatisticsPage_Information_center_Static_Caption {
+                font-size: .9em;
+                font-weight: 400;
+                color: var(--txt-secondary);
+            }
+        }
+        .cardStatisticsPage_Information_center_Static_Count_List {
+            display: flex;
+            flex-direction: column;
+            gap: .25em;
+
+            margin-top: 1em;
+
+            .cardStatisticsPage_Information_center_Static_Count {
+                color: var(--txt-secondary);
+                opacity: .5;
+            }
+        }
+    }
+    .cardStatisticsPage_Information_down {
+        .cardStatisticsPage_Information_down_Caption {
+            font-size: 6em;
+            font-weight: 500;
+            color: var(--txt-primary);
+        }
+    }
+}
