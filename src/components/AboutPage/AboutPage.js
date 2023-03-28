@@ -1,6 +1,97 @@
-import React from 'react'
+import React from 'react';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { useEffect, useRef } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function AboutPage() {
+    useEffect(() => {
+        gsap.to(".aboutPage_info_Title", {
+        y: "1em",
+        color: "var(--txt-primary)",
+        transformOrigin: "bottom",
+        duration: 3,
+        opacity: 1,
+        scrollTrigger: {
+            trigger: ".aboutPage_info",
+            start: "center +500",
+            end: "bottom center",
+            scrub: 1,
+            },
+        });
+        gsap.to(".aboutPage_info_Description", {
+            y: "4em",
+            color: "var(--txt-primary)",
+            transformOrigin: "bottom",
+            duration: 3,
+            opacity: 1,
+            scrollTrigger: {
+                trigger: ".aboutPage_info",
+                start: "center +600",
+                end: "bottom center",
+                scrub: 2,
+                },
+            });
+        gsap.to(".aboutPage_static", {
+            y: "4em",
+            marginBottom: "8em",
+            color: "var(--txt-primary)",
+            transformOrigin: "bottom",
+            duration: 3,
+            opacity: 1,
+            scrollTrigger: {
+                trigger: ".aboutPage",
+                start: "center +600",
+                end: "bottom center",
+                scrub: 1,
+                },
+            });
+        gsap.to(".card1", {
+            y: "0em",
+            marginBottom: "8em",
+            color: "var(--txt-primary)",
+            transformOrigin: "bottom",
+            duration: 3,
+            opacity: 1,
+            scrollTrigger: {
+                trigger: ".aboutPage_static",
+                start: "center +600",
+                end: "bottom center",
+                scrub: 1,
+                },
+            });
+        gsap.to(".card2", {
+            y: "2em",
+            marginBottom: "8em",
+            color: "var(--txt-primary)",
+            transformOrigin: "bottom",
+            duration: 3,
+            opacity: 1,
+            scrollTrigger: {
+                trigger: ".aboutPage_static",
+                start: "center +600",
+                end: "bottom center",
+                scrub: 2,
+                },
+            });
+        gsap.to(".card3", {
+            y: "4em",
+            marginBottom: "8em",
+            color: "var(--txt-primary)",
+            transformOrigin: "bottom",
+            duration: 3,
+            opacity: 1,
+            scrollTrigger: {
+                trigger: ".aboutPage_static",
+                start: "center +600",
+                end: "bottom center",
+                scrub: 3,
+                },
+            });
+
+        }, []);
+
   return (
     <div className='aboutPage'> {/* Высота блока 100VH */}
         {/* Вверх страницы */}

@@ -1,0 +1,29 @@
+.personPage {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    padding: 1em;
+
+    margin-bottom: 8em;
+
+    .personPage_Content {
+        .title {
+            font-size: 3em;
+            margin-bottom: .5em;
+        }
+        .description {
+            font-size: 1em;
+            max-width: 600px;
+            color: var(--txt-secondary);
+        }
+    }
+    .personPage_Image {
+        .image {
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
+}

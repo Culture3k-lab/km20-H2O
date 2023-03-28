@@ -1,21 +1,25 @@
 .aboutPage {
-    height: 100vh;
+    height: calc(125vh);
     padding: 1em;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
+    margin-bottom: 4em;
+
     .aboutPage_info {
         margin-top: 2em;
         .aboutPage_info_Title {
-            color: var(--txt-primary);
+            color: var(--lightGray);
             max-width: 800px;
             margin-bottom: .5em;
+            opacity: .5;
         }
         .aboutPage_info_Description {
             color: var(--txt-primary);
             max-width: 600px;
+            opacity: .0;
         }
     }
 
