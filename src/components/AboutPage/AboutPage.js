@@ -34,7 +34,7 @@ function AboutPage() {
                 },
             });
         gsap.to(".aboutPage_static", {
-            y: "4em",
+            y: "1em",
             marginBottom: "8em",
             transformOrigin: "bottom",
             duration: 3,
