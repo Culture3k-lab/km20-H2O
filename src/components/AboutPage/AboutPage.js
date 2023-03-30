@@ -34,7 +34,7 @@ function AboutPage() {
                 },
             });
         gsap.to(".aboutPage_static", {
-            y: "1em",
+            y: "8em",
             marginBottom: "8em",
             transformOrigin: "bottom",
             duration: 3,
@@ -48,7 +48,7 @@ function AboutPage() {
             });
         gsap.to(".card1", {
             y: "0em",
-            marginBottom: "8em",
+            marginBottom: "4em",
             transformOrigin: "bottom",
             duration: 3,
             opacity: 1,
@@ -61,7 +61,7 @@ function AboutPage() {
             });
         gsap.to(".card2", {
             y: "2em",
-            marginBottom: "8em",
+            marginBottom: "2em",
             transformOrigin: "bottom",
             duration: 3,
             opacity: 1,
@@ -74,7 +74,7 @@ function AboutPage() {
             });
         gsap.to(".card3", {
             y: "4em",
-            marginBottom: "8em",
+            marginBottom: "4em",
             transformOrigin: "bottom",
             duration: 3,
             opacity: 1,
