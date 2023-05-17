@@ -16,6 +16,13 @@ footer {
         overflow: hidden;
         gap: 1em;
 
+        a {
+            transition: .3s;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
         .logo1,
         .logo2,
         .logo3,
