@@ -4,27 +4,23 @@ import VisibilitySensor from 'react-visibility-sensor';
 
 
 function CardStatisticsPage(props) {
-  const end = props.el_all_count;
   const [isVisible, setIsVisible] = useState(false);
 
-
-const onVisibilityChange = (visible) => {
-  if (visible) {
+  const onVisibilityChange = (visible) => {
+    if (visible) {
       setIsVisible(true);
-  }
-};
+    }
+  };
 
-
-  const counterRef = useRef();
-  const currentCounterRef = useRef();
+  const counterRef = useRef(null);
 
   useCountUp({
     ref: counterRef,
-    end: isVisible ? counterRef.current?.innerHTML || 0 : 0,
+    end: isVisible ? props.el_all_count : 0,
     duration: 1.5,
-    separator: ',',
-    decimals: 0
- });
+    separator: ",",
+    decimals: 1
+  });
 
   return (
     <div className='cardStatisticsPage'>
