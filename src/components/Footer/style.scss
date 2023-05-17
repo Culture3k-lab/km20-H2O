@@ -14,7 +14,7 @@ footer {
         justify-content: space-around;
         flex-wrap: wrap;
         overflow: hidden;
-        gap: 1em;
+        gap: 1.5em;
 
         a {
             transition: .3s;
@@ -36,7 +36,7 @@ footer {
         justify-content: space-around;
         flex-wrap: wrap;
         overflow: hidden;
-        gap: 1em;
+        gap: 1.5em;
 
         .logo5,
         .logo6,
@@ -50,7 +50,7 @@ footer {
     footer {
         .footerLogoPart1,
         .footerLogoPart2 {
-            gap: .5em;
+            gap: 1em;
 
             .logo1,
             .logo2,
@@ -59,7 +59,7 @@ footer {
             .logo5,
             .logo6,
             .logo7 {
-                max-width: 120px;
+                max-width: 100px;
             }
         }
     }
