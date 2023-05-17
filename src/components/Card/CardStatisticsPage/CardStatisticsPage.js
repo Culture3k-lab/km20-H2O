@@ -1,28 +1,9 @@
-import React, { useRef, useState} from 'react'; // Добавляем {useRef}
+import React, { useRef } from 'react'; // Добавляем {useRef}
 import CountUp, { useCountUp } from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 
 
 function CardStatisticsPage(props) {
-  const [isVisible, setIsVisible] = useState(false);
-
-  const onVisibilityChange = (visible) => {
-    if (visible) {
-      setIsVisible(true);
-    }
-  };
-
-  const countUpRef = useRef(null);
-  const visibilityRef = useRef(null);
-
-  useCountUp({
-    ref: countUpRef,
-    end: isVisible ? props.el_all_count : 0,
-    duration: 1.5,
-    separator: ",",
-    decimals: 1
-  });
-
 
   return (
     <div className='cardStatisticsPage'>
@@ -54,15 +35,9 @@ function CardStatisticsPage(props) {
       </div>
       {/* Down */}
       <div className='cardStatisticsPage_Information_down'>
-        <VisibilitySensor
-          ref={visibilityRef}
-          partialVisibility={true}
-          onChange={onVisibilityChange}>
-          <span className='cardStatisticsPage_Information_bottom_Count' ref={countUpRef}>
-          {countUpRef}
-          </span>
-        </VisibilitySensor>
-
+            <span className='cardStatisticsPage_Information_down_Caption'>
+              {props.el_all_count}
+            </span>
       </div>
     </div>
   );
