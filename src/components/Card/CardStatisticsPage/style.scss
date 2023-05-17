@@ -1,5 +1,5 @@
 .cardStatisticsPage {
-    width: 100%;
+    width: auto;
     height: 100vh;
     padding: 2em 1em;
 
@@ -81,7 +81,7 @@
         .cardStatisticsPage_Information_down {
             grid-area: 1 / 2 / 3 / 3;
             .cardStatisticsPage_Information_down_Caption {
-                font-size: 10em;
+                font-size: 5em;
             }
         }
     }
