@@ -2,6 +2,11 @@ footer {
     width: 100%;
     overflow: hidden;
     padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1em;
 
     .footerLogoPart1 {
         display: flex;
