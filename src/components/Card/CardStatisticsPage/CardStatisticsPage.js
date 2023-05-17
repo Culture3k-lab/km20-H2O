@@ -20,7 +20,7 @@ function CardStatisticsPage(props) {
 
   useCountUp({
     ref: currentCounterRef,
-    end: isVisible ? counterRef.current?.innerHTML || 0 : 0,
+    end: counterRef.current?.innerHTML || 0,
     duration: 1.5,
     separator: ',',
     decimals: 0
