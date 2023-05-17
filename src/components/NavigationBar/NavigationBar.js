@@ -12,12 +12,12 @@ function NavigationBar() {
         </svg>
         <div className='buttonShop'>
         <Button
-            type='secondary'
+            type='primary'
             name="Яндекс Маркет"
             link="https://market.yandex.ru/product--voda-pitevaia-v-stekle-h2o-lednikovaia-zhivaia/1784673500?cpa=1&sku=101871403688&offerid=YQoEuF_N0Paj6p8eiPoXVg&fbclid=PAAaYx3EBNnS3RaX3L4iwBCr-udTM2F_Qp5AF-8ftAeHVzl8M6MmcB5_icsi0"
         />
         <Button
-            type='primary'
+            type='secondary'
             name="KM20 FOOD"
             link="https://km20food.ru/product-category/detoks/water/"
         />
