@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'; // Добавляем {useRef}
+import React, { useRef, useState} from 'react'; // Добавляем {useRef}
 import CountUp, { useCountUp } from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 
