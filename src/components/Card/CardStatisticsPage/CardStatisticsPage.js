@@ -4,13 +4,26 @@ import VisibilitySensor from 'react-visibility-sensor';
 
 
 function CardStatisticsPage(props) {
-  const counterRef = useRef(); // Создаем реф для счетчика
+  const end = props.el_all_count;
+
+  const counterRef = useRef();
+  const currentCounterRef = useRef();
 
   useCountUp({
-    ref: counterRef, // используем реф для определения элемента
-    end: props.el_all_count, // заменяем на значение из props
-    enableScrollSpy: true,
-    scrollSpyDelay: 1000,
+    ref: counterRef,
+    start: 0,
+    end: end,
+    duration: 3,
+    separator: ',',
+    decimals: 0,
+  });
+
+  useCountUp({
+    ref: currentCounterRef,
+    end: counterRef.current?.innerHTML || 0,
+    duration: 1.5,
+    separator: ',',
+    decimals: 0
   });
 
   return (
