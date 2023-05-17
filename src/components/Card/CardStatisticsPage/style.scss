@@ -63,15 +63,9 @@
 @media screen and (max-width: 960px) {
     .cardStatisticsPage {
         height: auto;
-        border-left: none;
-        border-bottom: 1px solid #BABABA;
-
-        display: grid; 
-        align-items: center;
-        grid-template-columns: repeat(2, 1fr); 
-        grid-template-rows: repeat(2, 1fr); 
+        width: calc(100vw / 2);
         grid-column-gap: 2em;
-        grid-row-gap: 0px;
+
         .cardStatisticsPage_Information_top {
             grid-area: 1 / 1 / 2 / 2;
         }
