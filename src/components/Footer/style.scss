@@ -13,13 +13,19 @@ footer {
         .logo2,
         .logo3,
         .logo4 {
-            max-width: 200px;
+            max-width: 160px;
         }
     }
     .footerLogoPart2 {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 2em;
+        flex-wrap: wrap;
+
+        .logo5,
+        .logo6,
+        .logo7 {
+            max-width: 160px;
+        }
     }
 }
