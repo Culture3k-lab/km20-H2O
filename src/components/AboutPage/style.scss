@@ -41,6 +41,7 @@
                 flex-direction: column;
 
                 margin-bottom: 2em;
+                white-space: nowrap;
 
                 .aboutPage_statistics_Title_Alt {
                     font-weight: 400;
@@ -55,6 +56,7 @@
                     opacity: .5;
 
                     margin-bottom: 1em;
+                    white-space: nowrap;
             }
             .aboutPage_statistics_Count {
                 font-size: 8em;
