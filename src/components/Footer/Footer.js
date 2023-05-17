@@ -18,8 +18,6 @@ function Footer() {
         <Link href="https://km20food.ru">
           <Image className='imageLogoSupport logo4' src="/logo4.svg" width="200" height="80" />
         </Link>
-      </div>
-      <div className='footerLogoPart2'>
         <Link href="https://fresas.restaurant">
           <Image className='imageLogoSupport logo5' src="/logo5.svg" width="200" height="80" />
         </Link>
