@@ -6,9 +6,10 @@ footer {
     .footerLogoPart1 {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
         overflow: hidden;
+        gap: 1em;
 
         .logo1,
         .logo2,
@@ -23,6 +24,7 @@ footer {
         justify-content: center;
         flex-wrap: wrap;
         overflow: hidden;
+        gap: 1em;
 
         .logo5,
         .logo6,
@@ -34,7 +36,9 @@ footer {
 
 @media screen and (max-width: 400px) {
     footer {
-        .footerLogoPart1 {}
-        .footerLogoPart2 {}
+        .footerLogoPart1,
+        .footerLogoPart2 {
+            gap: .5em;
+        }
     }
 }
