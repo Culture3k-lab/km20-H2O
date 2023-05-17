@@ -70,7 +70,7 @@
         align-items: center;
         grid-template-columns: repeat(2, 1fr); 
         grid-template-rows: repeat(2, 1fr); 
-        grid-column-gap: 0px;
+        grid-column-gap: 2em;
         grid-row-gap: 0px;
         .cardStatisticsPage_Information_top {
             grid-area: 1 / 1 / 2 / 2;
@@ -81,7 +81,7 @@
         .cardStatisticsPage_Information_down {
             grid-area: 1 / 2 / 3 / 3;
             .cardStatisticsPage_Information_down_Caption {
-                font-size: 5em;
+                font-size: 3em;
             }
         }
     }
