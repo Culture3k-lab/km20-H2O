@@ -60,7 +60,7 @@ function CardStatisticsPage(props) {
           )}
         </VisibilitySensor>
         <VisibilitySensor onChange={onVisibilityChange}>
-   <span ref={currentCounterRef}></span>
+   <span ref={counterRef}></span>
 </VisibilitySensor>
 
       </div>
