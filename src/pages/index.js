@@ -24,7 +24,7 @@ export default function Home() {
         <StatisticsPage />
         <ShowPage />
         <PersonPage />
-        <Footer />
+        {/* <Footer /> */}
       </main>
     </>
   )

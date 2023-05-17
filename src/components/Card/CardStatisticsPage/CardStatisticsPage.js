@@ -12,15 +12,17 @@ function CardStatisticsPage(props) {
     }
   };
 
-  const counterRef = useRef(null);
+  const countUpRef = useRef(null);
+  const visibilityRef = useRef(null);
 
   useCountUp({
-    ref: counterRef,
+    ref: countUpRef,
     end: isVisible ? props.el_all_count : 0,
     duration: 1.5,
     separator: ",",
     decimals: 1
   });
+
 
   return (
     <div className='cardStatisticsPage'>
@@ -52,16 +54,14 @@ function CardStatisticsPage(props) {
       </div>
       {/* Down */}
       <div className='cardStatisticsPage_Information_down'>
-        <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
-          {({ isVisible }) => (
-            <span ref={counterRef} className='cardStatisticsPage_Information_down_Caption'>
-              {props.el_all_count}
-            </span>
-          )}
+        <VisibilitySensor
+          ref={visibilityRef}
+          partialVisibility={true}
+          onChange={onVisibilityChange}>
+          <span className='cardStatisticsPage_Information_bottom_Count' ref={countUpRef}>
+            0
+          </span>
         </VisibilitySensor>
-        <VisibilitySensor onChange={onVisibilityChange}>
-   <span ref={counterRef}></span>
-</VisibilitySensor>
 
       </div>
     </div>
