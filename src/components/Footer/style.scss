@@ -7,6 +7,14 @@ footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
+
+        .logo1,
+        .logo2,
+        .logo3,
+        .logo4 {
+            max-width: 200px;
+        }
     }
     .footerLogoPart2 {
         display: flex;
