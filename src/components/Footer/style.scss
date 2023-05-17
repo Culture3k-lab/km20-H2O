@@ -6,7 +6,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    gap: 1em;
+    gap: 3em;
 
     .footerLogoPart1 {
         display: flex;
@@ -14,7 +14,7 @@ footer {
         justify-content: space-around;
         flex-wrap: wrap;
         overflow: hidden;
-        gap: 1.5em;
+        gap: 6em;
 
         a {
             transition: .3s;
@@ -36,7 +36,7 @@ footer {
         justify-content: space-around;
         flex-wrap: wrap;
         overflow: hidden;
-        gap: 1.5em;
+        gap: 6em;
 
         .logo5,
         .logo6,
@@ -46,8 +46,9 @@ footer {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 640px) {
     footer {
+        gap: 1.5em;
         .footerLogoPart1,
         .footerLogoPart2 {
             gap: 1em;
