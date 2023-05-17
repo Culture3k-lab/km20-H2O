@@ -59,7 +59,7 @@ function CardStatisticsPage(props) {
           partialVisibility={true}
           onChange={onVisibilityChange}>
           <span className='cardStatisticsPage_Information_bottom_Count' ref={countUpRef}>
-            0
+          {countUpRef}
           </span>
         </VisibilitySensor>
 
