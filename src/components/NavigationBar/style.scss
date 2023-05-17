@@ -9,4 +9,10 @@
     z-index: 1000;
     position: sticky;
     top: 0;
+
+    .buttonShop {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
 }
