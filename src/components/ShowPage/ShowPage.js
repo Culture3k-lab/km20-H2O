@@ -1,10 +1,12 @@
-import React from 'react'
-import Button from '../Button/Button'
+import React from 'react';
+import Image from 'next/image';
+import Button from '../Button/Button';
 
 function ShowPage() {
   return (
     <div className='showPage'>
         <div className='showPage_view'>
+          <Image className='image-cover-show' src="/show-main.jpg" width="680" height="800" />
         </div>
         <div className='showPage_information'>
             <div className='showPage_information_Action'>

@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 function MainPage() {
     useEffect(() => {
-        gsap.to(".image", {
+        gsap.to(".image-main-slider", {
         transform: "scale(0.5)",
         transformOrigin: "bottom",
         duration: 3,
@@ -24,7 +24,7 @@ function MainPage() {
 
 return (
     <div className='mainPage'>
-        <Image className='image' src="/main.jpg" width="680" height="800" />
+        <Image className='image image-main-slider' src="/main.jpg" width="680" height="800" />
     </div>
 )
 }
