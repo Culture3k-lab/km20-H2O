@@ -27,3 +27,16 @@
         }
     }
 }
+
+@media screen and (max-width: 960px) {
+    .personPage {
+        .personPage_Content {
+            .title {
+                font-size: 2em;
+                margin-bottom: .5em;
+            }
+            .description {
+            }
+        }
+    }
+}
