@@ -32,29 +32,12 @@ footer {
             max-width: 160px;
         }
     }
-    .footerLogoPart2 {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        overflow: hidden;
-        gap: 6em;
-        width: 100%;
-        max-width: 1200px;
-
-        .logo5,
-        .logo6,
-        .logo7 {
-            max-width: 160px;
-        }
-    }
 }
 
 @media screen and (max-width: 640px) {
     footer {
         gap: 1.5em;
-        .footerLogoPart1,
-        .footerLogoPart2 {
+        .footerLogoPart1 {
             gap: 1em;
 
             .logo1,
