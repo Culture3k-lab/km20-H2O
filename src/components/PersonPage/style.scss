@@ -30,6 +30,7 @@
 
 @media screen and (max-width: 960px) {
     .personPage {
+        grid-template-columns: repeat(1, 1fr);
         .personPage_Content {
             .title {
                 font-size: 2em;
