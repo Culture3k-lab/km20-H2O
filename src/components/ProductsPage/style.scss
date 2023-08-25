@@ -35,6 +35,11 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
+
+            @media screen and (max-width: 400px) {
+                height: 50vh;
+            }
 
             &:hover {
                 .productsPage_Item_Image {
@@ -53,6 +58,11 @@
                 object-fit: contain;
                 object-position: center;
                 transition: .3s;
+
+                @media screen and (max-width: 400px) {
+                    max-width: 200px;
+                    max-height: 200px;
+                }
             }
             .productsPage_Item_Info {
                 position: absolute;
