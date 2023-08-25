@@ -1,0 +1,77 @@
+.productsPage {
+    height: 800px;
+    border-bottom: 1px solid #BABABA;
+
+    @media screen and (max-width: 400px) {
+        height: fit-content;
+    }
+
+    .productsPage_List {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+
+        @media screen and (max-width: 960px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+        @media screen and (max-width: 400px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .productsPage_Item_Gray {
+            background-color: #EBEBEB;
+        }
+        .productsPage_Item_LightGray {
+            background-color: #F8F8F8;
+        }
+
+        .productsPage_Item {
+            position: relative;
+            padding: 2em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &:hover {
+                .productsPage_Item_Image {
+                    margin-top: 2em;
+                    @media screen and (max-width: 400px) {
+                        margin-top: 0;
+                    }
+                }
+            }
+
+            .productsPage_Item_Image {
+                max-width: 300px;
+                max-height: 300px;
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+                object-position: center;
+                transition: .3s;
+            }
+            .productsPage_Item_Info {
+                position: absolute;
+                bottom: 1em;
+                left: 1em;
+                display: flex;
+                flex-direction: column;
+
+                .productsPage_Item_Info_Title {
+                    font-size: 1em;
+                    font-weight: 500;
+                    margin-bottom: .5em;
+                }
+                .productsPage_Item_Info_Description {
+                    font-size: 0.9em;
+                    font-weight: 400;
+                    color: var(--txt-secondary);
+                }
+            }
+        }
+    }
+}

@@ -6,6 +6,8 @@ import StatisticsPage from '@/components/StatisticsPage/StatisticsPage'
 import ShowPage from '@/components/ShowPage/ShowPage'
 import PersonPage from '@/components/PersonPage/PersonPage'
 import Footer from '@/components/Footer/Footer'
+import ProductsPage from '@/components/ProductsPage/ProductsPage'
+import СollaborationPage from '@/components/СollaborationPage/СollaborationPage'
 
 
 export default function Home() {
@@ -22,6 +24,8 @@ export default function Home() {
         <MainPage />
         <AboutPage />
         <StatisticsPage />
+        <ProductsPage />
+        <СollaborationPage />
         <ShowPage />
         <PersonPage />
         <Footer />
