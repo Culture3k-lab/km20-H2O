@@ -43,5 +43,4 @@ function ShowPage() {
     </div>
   )
 }
-
 export default ShowPage
