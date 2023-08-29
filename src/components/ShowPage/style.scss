@@ -5,14 +5,17 @@
 
     .showPage_view {
         width: 100%;
-        height: 70%;
+        height: 70vh;
+        max-height: 70vh;
         background: var(--light-gray);
+        overflow: hidden;
 
         .image-cover-show {
             width: 100%;
-            height: 100%;
+            height: 150%;
             object-fit: cover;
             object-position: center;
+            transition: .3s;
         }
     }
     .showPage_information {

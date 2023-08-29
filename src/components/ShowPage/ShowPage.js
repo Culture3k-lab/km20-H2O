@@ -1,12 +1,34 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Button from '../Button/Button';
+import { gsap } from 'gsap';
 
 function ShowPage() {
+  const imageRef = useRef(null);
+
+  useEffect(() => {
+    const image = imageRef.current;
+
+    gsap.from(image, {
+      y: '-25%',
+      ease: 'power1.out',
+      scrollTrigger: {
+        trigger: image,
+        scrub: true,
+      },
+    });
+  }, []);
+
   return (
     <div className='showPage'>
-        <div className='showPage_view'>
-          <Image className='image-cover-show' src="/show-main.jpg" width="680" height="800" />
+      <div className='showPage_view'>
+        <Image
+          className='image-cover-show'
+          src="/show-main.jpg"
+          width="680"
+          height="800"
+          ref={imageRef}
+        />
         </div>
         <div className='showPage_information'>
             <div className='showPage_information_Action'>

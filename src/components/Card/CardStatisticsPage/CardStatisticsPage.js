@@ -1,9 +1,56 @@
-import React, { useRef } from 'react'; // Добавляем {useRef}
-import CountUp, { useCountUp } from 'react-countup';
-import VisibilitySensor from 'react-visibility-sensor';
-
+import React, { useRef, useEffect, useState } from 'react';
 
 function CardStatisticsPage(props) {
+  const captionRef = useRef(null);
+  const [isIntersecting, setIsIntersecting] = useState(false);
+
+  useEffect(() => {
+    const element = captionRef.current;
+    const count = parseFloat(props.el_all_count.replace(',', '.'));
+
+    let currentCount = 0;
+    let countInterval;
+
+    const startCountInterval = () => {
+      countInterval = setInterval(() => {
+        currentCount += count / 100;
+        if (currentCount >= count) {
+          clearInterval(countInterval);
+          currentCount = count;
+        }
+        if (element) {
+          element.textContent = currentCount.toFixed(1);
+        }
+      }, 10);
+    };
+
+    // Создаем экземпляр Intersection Observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        // Если компонент находится в зоне видимости, запускаем анимацию
+        if (entry.isIntersecting) {
+          setIsIntersecting(true);
+          startCountInterval();
+        } else {
+          setIsIntersecting(false);
+          clearInterval(countInterval);
+        }
+      });
+    });
+
+    // Начинаем наблюдение за компонентом
+    if (element) {
+      observer.observe(element);
+    }
+
+    // Отменяем наблюдение при размонтировании компонента
+    return () => {
+      clearInterval(countInterval);
+      if (element) {
+        observer.unobserve(element);
+      }
+    };
+  }, [props.el_all_count]);
 
   return (
     <div className='cardStatisticsPage'>
@@ -35,7 +82,7 @@ function CardStatisticsPage(props) {
       </div>
       {/* Down */}
       <div className='cardStatisticsPage_Information_down'>
-            <span className='cardStatisticsPage_Information_down_Caption'>
+            <span className='cardStatisticsPage_Information_down_Caption' ref={captionRef}>
               {props.el_all_count}
             </span>
       </div>
